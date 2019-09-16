@@ -76,3 +76,12 @@ Don't change the hyper-parameters of transformer util you have good solution, it
 As you see, transformer-pointer generator model can let the loss go down very quickly!
 
 ## If you like it, and think it useful for you, hope you can star.
+
+## Training on CNN/DailyMail dataset
+### Download data
+Fully processed data (in pytorch file format) can be found [here](https://drive.google.com/open?id=1x0d61LP9UAN389YN00z0Pv-7jQgirVg6)
+
+The files are organized into train, valid, and test sets. Each file contains a list of dictionaries of the format `dict_keys(['src', 'labels', 'segs', 'clss', 'src_txt', 'tgt_txt'])`. For this exercise we are only interested in `src_txt` and `tgt_text`.
+
+unzip the zipfile and put all `.pt` files into `data/bertsum_data`
+
